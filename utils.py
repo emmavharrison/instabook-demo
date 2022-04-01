@@ -7,7 +7,9 @@ from flask import request, redirect
 from mysql.connector import connect
 from config import DB_HOST, DB_USER, DB_PASS, DB_NAME
 
-
+# this is related to our "from mysql.connector import connect"
+# it gives us connect, which allows us to make our connection
+# this is us logging into the database
 def get_db_connection():
     connection = connect(
         host=DB_HOST,
